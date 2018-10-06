@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--导入common.xml-->
+    <import resource="common.xml"/>
+    <!--配置消息监听器-->
+    <bean id="messageListener" class="com.ecjtu.jms_spring.consumer.ConsumerMessageListener"/>
+    <!--配置消息监听容器-->
+    <bean id="container" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+        <property name="connectionFactory" ref="connectionFactory"/>
+        <!--这里是可切换模式的-->
+        <property name="destination" ref="topicDestination"/>
+        <property name="messageListener" ref="messageListener"/>
+    </bean>
+</beans>
