@@ -23,8 +23,7 @@ Java消息中间件入门
 
 		对比1：
     ![JMS_AMQP](
-        jms/image/JMS_AMQP.png
-      
+       https://github.com/Scoripions/jms/blob/master/image/JMS_AMQP.png
       )
 
 		常见的消息中间价的对比：
