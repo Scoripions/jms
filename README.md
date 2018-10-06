@@ -22,9 +22,9 @@ Java消息中间件入门
 		AMQP，即Advanced Message Queuing Protocol,一个提供统一消息服务的应用层标准高级消息队列协议,是应用层协议的一个开放标准,为面向消息的中间件设计。基于此协议的客户端与消息中间件可传递消息，并不受客户端/中间件不同产品，不同的开发语言等条件的限制。Erlang中的实现有 RabbitMQ等。
 
 		对比1：
-    ![JMS_AMQP](
-      https://raw.githubusercontent.com/Scoripions/jms/master/image/JMS_AMQP.png
-      )
+		
+		
+    ![JMS_AMQP](https://github.com/Scoripions/jms/blob/master/image/JMS_AMQP.png)
 
 		常见的消息中间价的对比：
 			ActiveMQ:
@@ -36,7 +36,7 @@ Java消息中间件入门
 			Kafka:
 			Kafka是由Apache软件基金会开发的一个开源流处理平台，由Scala和Java编写。Kafka是一种高吞吐量的分布式发布订阅消息系统，它可以处理消费者规模的网站中的所有动作流数据。 这种动作（网页浏览，搜索和其他用户的行动）是在现代网络上的许多社会功能的一个关键因素。 这些数据通常是由于吞吐量的要求而通过处理日志和日志聚合来解决。 对于像Hadoop的一样的日志数据和离线分析系统，但又要求实时处理的限制，这是一个可行的解决方案。Kafka的目的是通过Hadoop的并行加载机制来统一线上和离线的消息处理，也是为了通过集群来提供实时的消息。
 		对比2：
-    ![](https://github.com/Scoripions/jms/raw/master/image/%E5%B8%B8%E7%94%A8%E4%B8%AD%E9%97%B4%E4%BB%B6%E5%AF%B9%E6%AF%94.png)
+    ![对比2](https://github.com/Scoripions/jms/blob/master/image/%E5%B8%B8%E7%94%A8%E4%B8%AD%E9%97%B4%E4%BB%B6%E5%AF%B9%E6%AF%94.png)
 	4.JMS规范
 		JMS相关概念：
 			提供者：实现JMS规范的消息中间件服务器
